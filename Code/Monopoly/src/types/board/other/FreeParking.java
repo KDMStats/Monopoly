@@ -1,5 +1,6 @@
 package types.board.other;
 
+import store.MonopolyStore;
 import types.board.ABoardLocation;
 import types.player.Player;
 
@@ -11,8 +12,9 @@ public class FreeParking extends ABoardLocation {
 
 	@Override
 	public void playerLandsOnLocation(Player player) {
-		// TODO Auto-generated method stub
-
+		int money = MonopolyStore.getInstance().getBoard()
+				.takeFreeParkingMoney();
+		player.gainMoney(money);
 	}
 
 }

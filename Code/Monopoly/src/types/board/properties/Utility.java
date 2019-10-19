@@ -4,8 +4,9 @@ import types.player.Player;
 
 public class Utility extends AProperty {
 
-	public Utility(int index, String name) {
-		super(index, name);
+	public Utility(int index, String name, int purchasePrice,
+			int mortgatePrice) {
+		super(index, name, purchasePrice, mortgatePrice);
 	}
 
 	@Override

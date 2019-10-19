@@ -11,8 +11,11 @@ public class Go extends ABoardLocation {
 
 	@Override
 	public void playerLandsOnLocation(Player player) {
-		// TODO Auto-generated method stub
+		// Do Nothing, $200 will be given elsewhere
+	}
 
+	public int getMoneyGained() {
+		return 200;
 	}
 
 }

@@ -3,6 +3,7 @@ package setup;
 import java.util.ArrayList;
 import java.util.List;
 
+import controller.playerModules.StupidPlayerModule;
 import run.MonopolyRun;
 import types.board.ABoardLocation;
 import types.player.Player;
@@ -20,6 +21,7 @@ public class PlayerSetup {
 	}
 
 	private static Player getNewStartingPlayer(int i, ABoardLocation go) {
-		return new Player(PlayerToken.values()[i], 1500, go);
+		return new Player(PlayerToken.values()[i], 1500, go,
+				new StupidPlayerModule());
 	}
 }

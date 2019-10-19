@@ -11,8 +11,7 @@ public class Jail extends ABoardLocation {
 
 	@Override
 	public void playerLandsOnLocation(Player player) {
-		// TODO Auto-generated method stub
-
+		// Just Visiting
 	}
 
 }
